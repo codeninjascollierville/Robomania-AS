@@ -1705,6 +1705,8 @@ GameObject:
   - component: {fileID: 1163686246}
   - component: {fileID: 1163686251}
   - component: {fileID: 1163686249}
+  - component: {fileID: 1163686252}
+  - component: {fileID: 1163686250}
   m_Layer: 0
   m_Name: Crusher1
   m_TagString: Enemy
@@ -1821,6 +1823,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.51, y: 0.51}
   m_EdgeRadius: 0
+--- !u!114 &1163686250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163686245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188bdf8a4e991ad45ac816ec3a26e1e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1163686251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1834,6 +1848,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1848470342}
+--- !u!114 &1163686252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163686245}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af96041bde7f7ee4e828c697c42f11e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshairs: {fileID: 0}
+  protonBlaster: {fileID: 0}
+  protonPrefab: {fileID: 0}
+  protonSpeed: 20
 --- !u!1 &1169863300
 GameObject:
   m_ObjectHideFlags: 0
