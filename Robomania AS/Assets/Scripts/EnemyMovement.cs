@@ -13,11 +13,27 @@ public class EnemyMovement : MonoBehaviour
    private void FixedUpdate()
   
    {
+        
+        if (transform.position.x <= -8)
+       {
+            speed = speed * -1;
+       }
+
+       if (transform.position.x >= 8)
+   {
+          speed = speed * -1;
+   }
+        
         float newXPosition = transform.position.x + speed * Time.deltaTime;
         float newYPosition = transform.position.y;
         Vector2 newPosition = new Vector2(newXPosition, newYPosition);
         transform.position = newPosition;
     }
+
+
+
+
+
 }
 
     // Update is called once per frame
