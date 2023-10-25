@@ -5,7 +5,8 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
      public float yForce;
-
+     public float xForce;
+     public float xDirection;
      private Rigidbody2D enemyRigidBody;
      // public float speed;
        
@@ -14,20 +15,38 @@ public class EnemyMovement : MonoBehaviour
 {
     enemyRigidBody = GetComponent<Rigidbody2D>();
 }
-
-
-
+ 
+ 
    private void FixedUpdate()
+   {
+       if (transform.position.x <= -8)
+       {
+        xDirection = 1;
+        enemyRigidBody.AddForce(Vector2.right * xForce);
+       }
+       
+       
+       if (transform.position.x >= 8)
+    
+    {
+       xDirection = -1;
+        enemyRigidBody.AddForce(Vector2.left * xForce);
+    }
+   }
   
   private void OnCollisionEnter2D(Collision2D collision)
    {
-        
-        if (transform.position.x <= -8)
+        if (collision.gameObject.tag == "Ground")
+       // if (transform.position.x <= -8)
        {
+         Vector2 jumpForce = new Vector2(xForce, yForce);
+
+       // Vector2 jumpForce = new Vector2(0, yForce);
+        enemyRigidBody.AddForce(jumpForce);
           //  speed = speed * -1;
        }
-
-       if (transform.position.x >= 8)
+   
+       
    {
           //speed = speed * -1;
    }
