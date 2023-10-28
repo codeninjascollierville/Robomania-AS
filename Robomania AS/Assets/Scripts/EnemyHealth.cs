@@ -86,5 +86,9 @@ public class EnemyHealth : MonoBehaviour
 
         // self destruct the enemy!
         Destroy(gameObject);
+    
+    
+    
     }
 }
+//hi aiden
