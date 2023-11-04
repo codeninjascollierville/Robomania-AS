@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
      public float yForce;
      public float xForce;
      public float xDirection;
+    //public float yDirection;
      private Rigidbody2D enemyRigidBody;
      // public float speed;
        
@@ -32,6 +33,15 @@ public class EnemyMovement : MonoBehaviour
        xDirection = -1;
         enemyRigidBody.AddForce(Vector2.left * xForce);
     }
+   
+   
+    {
+      // yDirection = -1;
+       // enemyRigidBody.AddForce(Vector2.up * yForce);
+    }
+   
+   
+   
    }
   
   private void OnCollisionEnter2D(Collision2D collision)
@@ -41,6 +51,8 @@ public class EnemyMovement : MonoBehaviour
        {
          Vector2 jumpForce = new Vector2(xForce, yForce);
 
+
+  //if (collision.gameObject.tag == "player")
        // Vector2 jumpForce = new Vector2(0, yForce);
         enemyRigidBody.AddForce(jumpForce);
           //  speed = speed * -1;
@@ -66,6 +78,4 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     //void Update()
     
-        
-    
-
+// change Crusher2 yforce back to 300
