@@ -114,6 +114,7 @@ public class PlayerControls : MonoBehaviour
         {
             roboManIsOnTheGround = true;
         }
+
     }
 
     // if RoboMan is not colliding with the Ground game object in the scene,
@@ -124,5 +125,20 @@ public class PlayerControls : MonoBehaviour
         {
             roboManIsOnTheGround = false;
         }
+       
+         private void OnCollisionExit2D(Collision2D collision)
+    }
+      if (collision.collider.tag == "Enemy")
+
+{
+
+}
+{
+       //  if (collision.gameObject.tag == "Enemy")
+         //{
+         //    roboManIsOnTheEnemy = false;
+        //}
+   
+   
     }
 }

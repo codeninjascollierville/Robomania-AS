@@ -2343,7 +2343,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188bdf8a4e991ad45ac816ec3a26e1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   yForce: 300
+=======
+  yForce: 3000
+>>>>>>> 2c168749c376222dff0f8f2daac094db1864afa7
   xForce: 130
   xDirection: 1
 --- !u!61 &1604866798
@@ -2896,7 +2900,7 @@ GameObject:
   - component: {fileID: 1870079847}
   m_Layer: 5
   m_Name: UI
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
