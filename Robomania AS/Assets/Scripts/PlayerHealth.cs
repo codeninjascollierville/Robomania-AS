@@ -44,6 +44,13 @@ public class PlayerHealth : MonoBehaviour
     {
         // first, remove one point of health from RoboMan
         health--;
+          health--;
+           health--;
+            health--;
+           //  health--;
+          
+          
+
         // update the health bar's value to the new health value to move the slider
         healthBar.value = health;
 

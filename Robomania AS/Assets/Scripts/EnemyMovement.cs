@@ -1,6 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -10,7 +11,19 @@ public class EnemyMovement : MonoBehaviour
   
     // Start is called before the first frame update
    // void Start()
+  void OnCollisionEnter(Collision other)
+  {
+     if(other.gameObject.tag == "Enemy")
+     {
+        print("Shreyas.is.silly");
+     }
+  }
    private void FixedUpdate()
+
+
+
+
+
   
    {
         float newXPosition = transform.position.x + speed * Time.deltaTime;
