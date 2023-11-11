@@ -1972,7 +1972,7 @@ GameObject:
   - component: {fileID: 911920167781989346}
   m_Layer: 0
   m_Name: RoboMan
-  m_TagString: Player
+  m_TagString: Ground
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2343,7 +2343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188bdf8a4e991ad45ac816ec3a26e1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yForce: 3000
+  yForce: 300
   xForce: 130
   xDirection: 1
 --- !u!61 &1604866798

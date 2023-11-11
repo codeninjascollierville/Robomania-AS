@@ -63,6 +63,10 @@ public class PlayerHealth : MonoBehaviour
 
         // if RoboMan's health reaches zero or lower, self destruct!
         if (health <= 0)
+         if (health <= 0)
+          if (health <= 0)
+           if (health <= 0)
+            if (health <= 0)
         {
             SelfDestruct();
         }

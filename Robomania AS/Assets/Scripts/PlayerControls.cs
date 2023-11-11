@@ -126,19 +126,20 @@ public class PlayerControls : MonoBehaviour
             roboManIsOnTheGround = false;
         }
        
-         private void OnCollisionExit2D(Collision2D collision)
-    }
-      if (collision.collider.tag == "Enemy")
+         //private void OnCollisionExit2D(Collision2D collision);
+    //}
+     // if (collision.collider.tag == "Enemy")
+//}
+//{
 
-{
-
-}
-{
+//}
+//{
        //  if (collision.gameObject.tag == "Enemy")
          //{
          //    roboManIsOnTheEnemy = false;
         //}
    
    
-    }
+    
+}
 }
